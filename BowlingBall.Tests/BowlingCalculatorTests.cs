@@ -9,6 +9,7 @@ public class BowlingCalculatorTests
     [InlineData(new string[] {"4/", "X", "71"}, 46)]
     [InlineData(new string[] {"4/", "X", "71", "XXX"}, 76)]
     [InlineData(new string[] {"3/", "X", "XXX"}, 80)]
+    [InlineData(new string[] {"--", "--", "X-3"}, 13)]
 
     public void Result_should_give_correct_result(string[] scoringArray, int result)
     {

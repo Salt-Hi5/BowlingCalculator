@@ -10,7 +10,7 @@ public class Frame
         get
         {
             if (_throw1.Contains("X")) return 10;
-            return int.Parse(_throw1);
+            return int.Parse(_throw1.Replace("-","0"));
         }
     }
     public int Throw2
